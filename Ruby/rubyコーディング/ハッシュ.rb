@@ -28,7 +28,7 @@ def registration_student(students)
   student[:math] = gets.to_i
   puts "英語の得点は？"
   student[:english] = gets.to_i
-  students << student
+  students << student　#最後の行が戻り値となる
 
 end
 
@@ -60,7 +60,7 @@ while true
   puts '[3]終了する'
   input = gets.to_i
   if input == 1
-    registration_student(students)
+    registration_student(students) #このstudentsは、sutudents=[]の、[]が入っている　#返された値は、students << student
   elsif input == 2
     show_student_name(students)
   elsif input == 3
