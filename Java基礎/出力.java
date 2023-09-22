@@ -40,3 +40,23 @@ class Main {
 //Wanko
 
 ----------------------------------------------------------------
+//変数の初期化
+
+  class Main {
+  public static void main(String[] args) {
+    int number1 = 3;
+    
+    // int型の変数number2を定義し、7を代入してください
+    int number2 = 7;
+    System.out.println(number1 * number2);
+    String text = "プログラミングを勉強しよう";
+    System.out.println("Progateで" + text); 
+  }
+}
+
+//出力
+//21
+//Progateでプログラミングを勉強しよう
+
+----------------------------------------------------------------------
+
