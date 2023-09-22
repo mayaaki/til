@@ -19,5 +19,24 @@ class Main {
 //8
 //5＋3
 --------------------------------------------------------------
-
+//変数定義の基礎
+//int型および、String型に変数定義・代入・出力
   
+  class Main {
+  public static void main(String[] args) {
+
+    int number;
+    number = 3;
+    System.out.println(number);
+
+    String name;
+    name = "Wanko";
+    System.out.println(name);
+  }
+}
+
+//出力
+//3
+//Wanko
+
+----------------------------------------------------------------
