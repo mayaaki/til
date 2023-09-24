@@ -10,7 +10,6 @@ class Main {
     
     // 「5 + 3」を文字列として出力してください
     System.out.println("5 + 3");
-    
   }
 }
 
