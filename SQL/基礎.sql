@@ -18,3 +18,8 @@ FROM purchases;
 SELECT *
 FROM purchases
 WHERE category = "食費";
+---------------------------------------------------------------------
+//purchased_atカラムが「2017-07-01」のデータを取得
+SELECT *
+FROM purchases
+WHERE purchased_at = "2017-07-01";
