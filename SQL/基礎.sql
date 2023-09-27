@@ -23,3 +23,4 @@ WHERE category = "食費";
 SELECT *
 FROM purchases
 WHERE purchased_at = "2017-07-01";
+--------------------------------------------------------------------
