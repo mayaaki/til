@@ -8,7 +8,7 @@ FROM purchases;
 
 SELECT *
 From purchases;
---------------------------------------------------------------------
+------------------------------------------------------------------
 //purchasesテーブルから、「nameカラム」と「priceカラム」のデータを取得
 
 SELECT name, price
@@ -18,7 +18,7 @@ FROM purchases;
 SELECT *
 FROM purchases
 WHERE category = "食費";
----------------------------------------------------------------------
+--------------------------------------------------------------------
 //purchased_atカラムが「2017-07-01」のデータを取得
 SELECT *
 FROM purchases
@@ -33,3 +33,8 @@ WHERE purchased_at <= "2017-08-01";
 SELECT *
 FROM purchases
 WHERE name LIKE "%プリン%";
+--------------------------------------------------------------------
+//nameカラムが「プリン」で終わるデータを取得
+SELECT *
+FROM purchases
+WHERE name LIKE "%プリン";
