@@ -43,3 +43,8 @@ WHERE name LIKE "%プリン";
 SELECT *
 FROM purchases
 WHERE name LIKE "プリン%";
+--------------------------------------------------------------------
+//priceカラムがNULLでないデータを取得
+SELECT *
+FROM purchases
+WHERE price IS NOT NULL;
