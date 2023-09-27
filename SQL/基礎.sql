@@ -13,3 +13,8 @@ From purchases;
 
 SELECT name, price
 FROM purchases;
+-------------------------------------------------------------------
+//「FROM purchases」のあとにコードを追加し、categoryカラムが「食費」であるデータを取得
+SELECT *
+FROM purchases
+WHERE category = "食費";
