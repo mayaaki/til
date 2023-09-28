@@ -8,8 +8,14 @@ FROM purchases
 WHERE character_name = "わんこ"
 ;
 
--- character_nameが「にんじゃわんこ」であるpriceカラムのデータの平均を取得
+-- character_nameが「わんこ」であるpriceカラムのデータの平均を取得
 SELECT AVG(price)
 FROM purchases
-WHERE character_name = "にんじゃわんこ"
+WHERE character_name = "わんこ"
+;
+
+-- character_nameが「わんこ」であるデータの数を取得
+SELECT COUNT(*)
+FROM purchases
+WHERE character_name = "わんこ"
 ;
