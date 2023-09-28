@@ -7,3 +7,9 @@ SELECT SUM(price)
 FROM purchases
 WHERE character_name = "わんこ"
 ;
+
+-- character_nameが「にんじゃわんこ」であるpriceカラムのデータの平均を取得
+SELECT AVG(price)
+FROM purchases
+WHERE character_name = "にんじゃわんこ"
+;
