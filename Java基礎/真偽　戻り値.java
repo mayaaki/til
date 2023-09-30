@@ -1,4 +1,5 @@
 //真偽　戻り値まとめ
+
 class Main {
   public static void main(String[] args) {
     printData(fullName("Kate", "Jones"), 27, 1.6, 50.0);
