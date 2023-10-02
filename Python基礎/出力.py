@@ -29,3 +29,10 @@ total_price = apple_price * apple_count
 
 # total_price の値を出力してください
 print(total_price)
+
+------------------------------------------------------------
+# my_name という変数に「 わんこ 」という文字列を代入してください
+my_name = "わんこ"
+
+# my_name を用いて、「私はわんこです」となるように変数と文字列を連結して出力してください
+print("私は" + my_name + "です")
