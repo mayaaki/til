@@ -56,5 +56,12 @@ SELECT SUM(price), purchased_at
 FROM purchases
 GROUP BY purchased_at
 HAVING SUM(price) > 2000
+;
 
+-- 日付とキャラクターごとの合計金額のうち、3000円を超えるデータのみを取得
+
+SELECT SUM(price), purchased_at, character_name
+FROM purchases
+GROUP BY purchased_at, character_name
+HAVING SUM(price) > 3000
 ;
