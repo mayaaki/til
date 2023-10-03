@@ -1,5 +1,8 @@
 --SQLのグループ化の順番
-
+1.検索(WHERE)
+2.グループ化(GROUP BY)
+3.関数(COUNT,SUM,AVG,MAX,MIN)
+4.HAVING--GROUP BYによってグループ化されたものを検索対象とする
 
 
 
