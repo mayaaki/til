@@ -8,3 +8,12 @@ WHERE goals > (
   WHERE name = "ウィル"
 )
 ;
+
+-- サブクエリを使ってgoalsの値の平均よりも大きい値のレコードを取得
+SELECT name,goals
+FROM players
+WHERE goals > (
+  SELECT AVG(goals)
+  FROM players
+)
+;
