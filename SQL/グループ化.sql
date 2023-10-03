@@ -4,8 +4,6 @@
 --3.関数(COUNT,SUM,AVG,MAX,MIN)
 --4.HAVING--GROUP BYによってグループ化されたものを検索対象とする
 
-
-
 -- purchased_atごとのお金を使った数を取得
 
 SELECT COUNT(price),  purchased_at
