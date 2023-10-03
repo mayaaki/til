@@ -66,6 +66,13 @@ GROUP BY purchased_at, character_name
 HAVING SUM(price) > 3000
 ;
 
+-- categoryでグループ化し、各カテゴリーごとにpriceカラムの合計とcategoryカラムのデータを取得
+
+SELECT SUM(price), category
+FROM purchases
+GROUP BY category
+;
+
 -- キャラクターごとにグループ化し、priceカラムの合計と、character_nameを取得
 -- ただし、WHEREでcategoryが「雑費」であるレコードから集計
 
@@ -74,3 +81,5 @@ FROM purchases
 WHERE category = "雑費"
 GROUP BY character_name
 ;
+
+
