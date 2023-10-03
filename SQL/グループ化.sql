@@ -25,3 +25,11 @@ SELECT COUNT(*), purchased_at, character_name
 FROM purchases
 GROUP BY purchased_at, character_name
 ;
+
+-- WHEREに条件を付け足してcharacter_nameがわんこであるデータを取得し、グループ化
+
+SELECT SUM(price), purchased_at
+FROM purchases
+WHERE character_name = "わんこ"
+GROUP BY purchased_at
+;
