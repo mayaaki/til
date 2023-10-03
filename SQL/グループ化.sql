@@ -65,3 +65,12 @@ FROM purchases
 GROUP BY purchased_at, character_name
 HAVING SUM(price) > 3000
 ;
+
+-- キャラクターごとにグループ化し、priceカラムの合計と、character_nameを取得
+-- ただし、WHEREでcategoryが「雑費」であるレコードから集計
+
+SELECT SUM(price), character_name
+FROM purchases
+WHERE category = "雑費"
+GROUP BY character_name
+;
