@@ -1,6 +1,6 @@
 //外部ライブラリを導入
 //Mathは数学的メソッドを持つライブラリ
-// java.lang.Mathを読み込み
+// java.lang.Mathを読み込み(通常Mathライブラリはよく使われるのでimportしなくても自動で使えるようになっている)
 
 //Main.java
 class Main {
