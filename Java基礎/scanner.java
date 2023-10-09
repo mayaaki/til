@@ -17,3 +17,15 @@ class Main {
     System.out.println("こんにちは" + name + "さん");
   }
 }
+
+//整数や少数を入力してもらう場合
+    // 文字列の入力を受け取る
+    String name = scanner.next();
+    
+    System.out.print("年齢：");
+    // 整数の入力を受け取る
+    int age = scanner.nextInt();
+    
+    System.out.print("身長(m)：");
+    // 小数の入力を受け取る
+    double height = scanner.nextDouble();
