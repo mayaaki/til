@@ -19,6 +19,7 @@ class Main {
 }
 
 //整数や少数を入力してもらう場合
+    System.out.print("名前：");
     // 文字列の入力を受け取る
     String name = scanner.next();
     
