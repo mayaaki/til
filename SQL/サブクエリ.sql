@@ -29,6 +29,7 @@ SELECT SUM(goals) AS "チームの合計得点"
 FROM players
 ;
 
+--日本よりランクが上位である国のデータを取得する
 SELECT *
 FROM countries
 WHERE rank < (
