@@ -1,3 +1,4 @@
+//条件分岐
 money = 100
 apple_price = 200
 
