@@ -6,9 +6,9 @@ class Main {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     System.out.print("何人分の情報を入力しますか：");
-    int n = scanner.nextInt();
-    for (int i = 0; i < n; i++){
-      System.out.print(i + 1 + "人目");
+    int n = scanner.nextInt();  //scannerで整数で帰ってきてほしいので、nextIntとする
+    for (int i = 0; i < n; i++){      //繰り返し構文
+      System.out.print(i + 1 + "人目");  //iの初期値が0のため1を加えて出力
       System.out.print("名前：");
       String firstName = scanner.next();
       System.out.print("名字：");
