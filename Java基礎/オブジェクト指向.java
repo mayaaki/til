@@ -6,21 +6,32 @@
 //インスタンスフィールドも各インスタンスに属し、インスタンスを生成するときに、各インスタンスにフィールドがコピーされるというイメージ
 class Main {
   public static void main(String[] args) {
+    
     // Personクラスのインスタンスを生成し、変数person1に代入
     Person person1 = new Person();
     // person1に対して、helloメソッドを呼び出す
     person1.hello();
+    // person1のインスタンスフィールドnameに「Kate Jones」をセット
+    person1.name = "Kate Jones";
+    // person1のインスタンスフィールドnameの値を出力
+    System.out.println(person1.name);
     
     // Personクラスのインスタンスを生成し、変数person2に代入
     Person person2 = new Person();
     // person2に対して、helloメソッドを呼び出す
     person2.hello();
+    // person2のインスタンスフィールドnameに「John Christopher Smith」をセット
+    person2.name = "John Christopher Smith";
+    // person2のインスタンスフィールドnameの値を出力
+    System.out.println(person2.name);
   }
 }
 
 //Person.java
 // Personクラスを定義
 class Person{
+  // インスタンスフィールドnameを定義
+  public String name;
    // インスタンスメソッドhelloを定義
   public void hello(){
     System.out.println("こんにちは");
