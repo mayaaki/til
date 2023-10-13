@@ -123,4 +123,6 @@ class Main {
     }
   System.out.println("最高年齢は" + maxAge + "歳です");
   System.out.println("平均年齢は" + sumAge / n + "歳です");
-  
+
+//Person.java
+同上
