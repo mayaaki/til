@@ -6,17 +6,23 @@ class Main {
   public static void main(String[] args) {
     // Personクラスのインスタンスを生成し、変数person1に代入
     Person person1 = new Person();
+    // person1に対して、helloメソッドを呼び出す
+    person1.hello();
     
     // Personクラスのインスタンスを生成し、変数person2に代入
     Person person2 = new Person();
-    
+    // person2に対して、helloメソッドを呼び出す
+    person2.hello();
   }
 }
 
 //Person.java
 // Personクラスを定義
 class Person{
-  
+   // インスタンスメソッドhelloを定義
+  public void hello(){
+    System.out.println("こんにちは");
+  }
 }
 ---------------------------------------------------------------------
   
