@@ -6,7 +6,21 @@
 //Main.java
 class Main {
   public static void main(String[] args) {
-    Person person1 = new Person();
-    Person person2 = new Person();
+    Person person1 = new Person(); //インスタンス生成時点で呼び出されるのがコンストラクタ
+    Person person2 = new Person(); //同上
+  }
+}
+
+//Person.java
+class Person {
+  public String name;
+
+  // コンストラクタを定義
+  Person(){
+    System.out.println("インスタンスが生成されました");
+  }
+
+  public void hello() {
+    System.out.println("こんにちは、私は" + this.name + "です");
   }
 }
