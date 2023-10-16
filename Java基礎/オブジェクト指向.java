@@ -41,7 +41,7 @@ class Person{
 //thisを使用
 //クラス内のメソッド定義のなかで使える。
 //Main.java
-  class Main {
+class Main {
   public static void main(String[] args) {
     Person person1 = new Person();
     person1.name = "Kate Jones";
@@ -50,5 +50,15 @@ class Person{
     Person person2 = new Person();
     person2.name = "John Christopher Smith";
     person2.hello();
+  }
+}
+
+//Person.java
+class Person {
+  public String name;
+
+  public void hello() {
+    // thisを用いて、「こんにちは、私は◯◯です」で出力するように以下を書き換えてください
+    System.out.println("こんにちは、私は" + this.name + "です");
   }
 }
