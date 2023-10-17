@@ -31,3 +31,12 @@ let name = "わんこ";
 // 変数nameの値を出力してください
 console.log(name);
 ----------------------------------
+// 変数lengthを定義
+let length = 5;
+
+// 変数lengthの値を出力
+console.log(length);
+
+// 変数lengthを用いて、円の面積を出力
+console.log(length * length * 3);
+----------------------------------
