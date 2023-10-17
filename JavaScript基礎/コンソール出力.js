@@ -40,3 +40,12 @@ console.log(length);
 // 変数lengthを用いて、円の面積を出力
 console.log(length * length * 3);
 ----------------------------------
+//変数の更新　わんこからとりへ
+let name = "わんこ";
+console.log(name);
+
+// 変数nameの値を"とりずきん"に更新してください
+name = "とり";
+
+// 変数nameの値を出力してください
+console.log(name);
