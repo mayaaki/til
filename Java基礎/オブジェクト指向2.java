@@ -58,3 +58,20 @@ class Person {
     this.weight = weight;
   }
 }
+-----------------------------------------------------------------------
+//thisを用いて出力
+//Main.java
+class Main {
+  public static void main(String[] args) {
+    Person person1 = new Person("Kate", "Jones", 27, 1.6, 50.0);
+
+    System.out.println(person1.fullName());
+    System.out.println(person1.age);
+    System.out.println(person1.bmi());
+  }
+}
+
+
+
+
+  
