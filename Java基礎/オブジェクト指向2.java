@@ -61,6 +61,7 @@ class Person {
 -----------------------------------------------------------------------
 //thisを用いて出力
 //Main.java
+  
 class Main {
   public static void main(String[] args) {
     Person person1 = new Person("Kate", "Jones", 27, 1.6, 50.0);
@@ -71,7 +72,34 @@ class Main {
   }
 }
 
+//Person.java
 
+class Person {
+  public String firstName;
+  public String lastName;
+  public int age;
+  public double height;
+  public double weight;
+
+  Person(String firstName, String lastName, int age, double height, double weight) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.height = height;
+    this.weight = weight;
+  }
+  
+  // fullNameメソッドを定義(thisを使う)
+  public String fullName(){
+    return this.firstName + " " + this.lastName;
+  }
+  
+  // bmiメソッドを定義(thisを使う)
+  public double bmi(){
+    return this.weight / this.height / this.height;
+  }
+  
+}
 
 
   
