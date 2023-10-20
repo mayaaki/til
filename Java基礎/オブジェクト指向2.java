@@ -57,5 +57,4 @@ class Person {
     this.height = height;
     this.weight = weight;
   }
-  
 }
