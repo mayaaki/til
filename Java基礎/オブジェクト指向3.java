@@ -220,4 +220,16 @@ class Person {
   }
   ---------------------------------------------------------------------------------------------------
   //middleNameの条件分岐
+
+  //Main.java
+  //下記以外は上記から変更なし
+  public String fullName() {
+    // 以下を、middleNameがない場合とある場合で条件分岐
+    if (middleName == null){
+      return this.firstName + " " + this.lastName;
+    }else{
+      return this.firstName + " " + this.middleName + " " + this.lastName;
+    }
+  }
+  
   
