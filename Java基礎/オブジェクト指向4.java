@@ -7,3 +7,5 @@ class Person {
   private String middleName;
   private String lastName;
 }
+//上記は別クラス（例えばMainクラス）からは呼び出せない
+
