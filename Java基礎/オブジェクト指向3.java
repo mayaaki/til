@@ -218,3 +218,6 @@ class Person {
   public double bmi() {
     return this.weight / this.height / this.height;
   }
+  ---------------------------------------------------------------------------------------------------
+  //middleNameの条件分岐
+  
