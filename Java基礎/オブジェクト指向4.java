@@ -20,10 +20,9 @@ class Person {
     public static void main(String[] args) {
       Person person2 = new Person("John", "Christopher", "Smith", 65, 1.75, 80.0);
     }
-  }
  // person2に対して、getMiddleNameメソッドを呼び出し、「person2のミドルネームは◯◯です」と出力
     System.out.println("person2のミドルネームは" + person2.getMiddleName() + "です");
-
+ }
 
 //Person.java
   class Person {
@@ -36,4 +35,24 @@ class Person {
 --------------------------------------------------------------------------------------------
 //セッター
 //フィールドの値を変更するメソッドを「セッター」
-  
+  //Main.java
+  class Main {
+    public static void main(String[] args) {
+      Person person2 = new Person("John", "Christopher", "Smith", 65, 1.75, 80.0);
+      }
+     person1.setMiddleName("Claire");
+      
+      System.out.println("ミドルネームを" + person1.getMiddleName() + "に変更しました");
+      person1.printData();
+    }
+  }
+  //Person.java
+  class Person {
+    private String middleName;
+    public String getMiddleName(){
+      return this.middleName;
+    }
+    public void setMiddleName(String middleName){
+    this.middleName = middleName;
+    }
+  }  
