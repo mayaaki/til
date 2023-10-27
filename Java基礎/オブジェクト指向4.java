@@ -14,8 +14,15 @@ class Person {
 //ゲッターは、「getフィールド名」のように命名するのが一般的です
 
 //Main.java
+  class Main {
+    public static void main(String[] args) {
+      Person person2 = new Person("John", "Christopher", "Smith", 65, 1.75, 80.0);
+    }
+  }
  // person2に対して、getMiddleNameメソッドを呼び出し、「person2のミドルネームは◯◯です」と出力
     System.out.println("person2のミドルネームは" + person2.getMiddleName() + "です");
+
+
 //Person.java
   class Person {
   private String middleName;
