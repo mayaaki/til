@@ -82,7 +82,6 @@ class Bicycle {
   Bicycle(String name, String color) {
     this.name = name;
     this.color = color;
-    this.distance = distance;
   }
   
   public void printData() {
@@ -105,5 +104,33 @@ class Main {
     
     //runメソッドに10を引き渡す
     bicycle.run(10);
+  }
+}
+
+//bicycle.java
+class Bicycle {
+  private String name;
+  private String color;
+  private int distance = 0;
+  
+  Bicycle(String name, String color) {
+    this.name = name;
+    this.color = color;
+  }
+  
+  public void printData() {
+    System.out.println("名前：" + this.name);
+    System.out.println("色：" + this.color);
+    System.out.println("走行距離：" + this.distance + "km");
+  }
+  
+  public void run(int runDistance) {
+    System.out.println(runDistance + "km走ります");
+
+    //runメソッドで引き渡されたkmを走行距離に加算
+    this.distance += runDistance;
+
+    //走行距離に加算後出力
+    System.out.println("走行距離：" + this.distance + "km");
   }
 }
