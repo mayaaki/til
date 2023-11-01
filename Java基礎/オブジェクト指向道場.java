@@ -62,3 +62,13 @@ class Bicycle {
 }
 --------------------------------------------------------------------------------------
 //走行距離を追加する（初期値は0km）
+
+//Main.java
+class Main {
+  public static void main(String[] args) {
+    Bicycle bicycle = new Bicycle("ビアンキ", "緑");
+    System.out.println("【自転車の情報】");
+    bicycle.printData();
+  }
+}
+
