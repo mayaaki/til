@@ -76,6 +76,7 @@ class Main {
 class Bicycle {
   private String name;
   private String color;
+  //distanceの初期値0を設定
   private int distance = 0;
   
   Bicycle(String name, String color) {
@@ -91,3 +92,4 @@ class Bicycle {
   }
 }
 ----------------------------------------------------------------------------------------
+
