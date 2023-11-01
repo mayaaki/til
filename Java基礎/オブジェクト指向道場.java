@@ -92,4 +92,18 @@ class Bicycle {
   }
 }
 ----------------------------------------------------------------------------------------
+//インスタンスメソッドにrunメソッドを定義
+//runメソッドで受け取った引数を走行距離（distance）に加算
 
+//Main.java
+class Main {
+  public static void main(String[] args) {
+    Bicycle bicycle = new Bicycle("ビアンキ", "緑");
+    System.out.println("【自転車の情報】");
+    bicycle.printData();
+    System.out.println("-----------------");
+    
+    //runメソッドに10を引き渡す
+    bicycle.run(10);
+  }
+}
