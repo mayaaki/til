@@ -24,7 +24,7 @@ class Main {
 }
 
 //Car.java
-//Bicycleとほとんど同じ
+//Bicycle.javaとほとんど同じ
 class Car {
   private String name;
   private String color;
