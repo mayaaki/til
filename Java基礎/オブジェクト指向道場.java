@@ -138,16 +138,21 @@ class Bicycle {
 //Scannerを用いて、コンソールから入力できるようにする
 
 //Main.java
+  
+//Scannerをインポートする
 import java.util.Scanner;
 
 class Main {
   public static void main(String[] args) {
+    //スキャナーを初期化
     Scanner scanner = new Scanner(System.in);
     Bicycle bicycle = new Bicycle("ビアンキ", "緑");
     System.out.println("【自転車の情報】");
     bicycle.printData();
     System.out.println("-----------------");
+    //改行なしの出力はprintlnではなくprint
     System.out.print("走る距離を入力してください：");
+    //bicycleDistanceに入力されたものを代入（整数型）
     int bicycleDistance = scanner.nextInt();
     bicycle.run(bicycleDistance);
   }
