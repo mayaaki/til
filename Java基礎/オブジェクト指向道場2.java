@@ -202,7 +202,9 @@ class Car {
     System.out.println("走行距離：" + this.distance + "km");
     System.out.println("ガソリン量：" + this.fuel + "L");
   }
-  
+
+  //chargeメソッド
+  //入力された給油量が0以下のとき、給油できません。ガソリン量＋給油量の合計が100以上のときガソリン量に100を代入し、更新。それ以外の場合はガソリン量＋給油量の合計をガソリン量に代入、更新。
   public void charge(int charge) {
     System.out.println(charge + "L給油します");
     if(charge <= 0) {
