@@ -43,3 +43,7 @@ class Bicycle extends Vehicle {
   // コードをVehicleクラスに移動
 }
 
+//Car.java
+class Bicycle extends Vehicle {
+  // コードをVehicleクラスに移動
+}
