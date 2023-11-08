@@ -129,7 +129,7 @@ class Main {
 
     System.out.println("【車の情報】");
     car.printData();
-    // getFuelメソッドを用いて「ガソリン量：◯◯L」と出力してください
+    // getFuelメソッドを用いて「ガソリン量：◯◯L」と出力
     System.out.println("ガソリン量：" + car.getFuel() + "L");
     
     System.out.println("-----------------");
@@ -142,6 +142,32 @@ class Main {
     System.out.println("【自転車の情報】");
     bicycle.printData();
   }
+}
+
+//Car.java
+class Car extends Vehicle {
+  // インスタンスフィールドfuelを定義
+  private int fuel = 50;
+  
+  // fuelフィールドのゲッターを定義
+  public int getFuel(){
+    return this.fuel;
+  }
+  
+  // インスタンスメソッドchargeを定義
+  public void charge(int litre) {
+    System.out.println(litre + "L給油します");
+    if (litre <= 0) {
+      System.out.println("給油できません");
+    } else if (litre + this.fuel >= 100) {
+      System.out.println("満タンまで給油します");
+      this.fuel = 100;
+    } else {
+      this.fuel += litre;
+    }
+    System.out.println("ガソリン量：" + this.fuel + "L");
+  }
+  
 }
 
   
