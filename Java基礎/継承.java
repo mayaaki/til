@@ -44,7 +44,7 @@ class Bicycle extends Vehicle {
 }
 
 //Car.java
-class Bicycle extends Vehicle {
+class Car extends Vehicle {
   // コードをVehicleクラスに移動
 }
 ---------------------------------------------------------------
@@ -79,6 +79,10 @@ class Main {
 
 //Car.java
 class Car extends Vehicle {
+}
+
+//bicycle.java
+class Bicycle extends Vehicle {
 }
   
 //Vehicle.java
