@@ -76,8 +76,12 @@ class Main {
     bicycle.printData();
   }
 }
+
+//Car.java
+class Car extends Vehicle {
+}
   
-//Vehicleクラス
+//Vehicle.java
 class Vehicle {
   private String name;
   private String color;
