@@ -218,8 +218,4 @@ class Car {
     System.out.println("ガソリン量：" + this.fuel + "L");
   }
 }
-
-
-
-
-  
+ 
