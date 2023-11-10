@@ -358,7 +358,7 @@ class Car extends Vehicle {
   private int fuel = 50;
   
   // Carクラスのコンストラクタを定義し、
-  // superを用いてスーパークラスのコンストラクタを呼び出してください
+  // superを用いてスーパークラスのコンストラクタを呼び出し
   Car(String name, String color){
     super(name, color);
   }
@@ -384,6 +384,16 @@ class Car extends Vehicle {
     }
     System.out.println("ガソリン量：" + this.fuel + "L");
   }
+}
+
+//Bicycle.java
+class Bicycle extends Vehicle {
+  // Bicycleクラスのコンストラクタを定義し、
+  // superを用いてスーパークラスのコンストラクタを呼び出し
+  Bicycle(String name, String color){
+    super(name, color);
+  }
+  
 }
 
 
