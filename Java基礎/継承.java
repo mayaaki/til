@@ -261,5 +261,35 @@ class Car extends Vehicle {
   }
 }
 -------------------------------------------------------------------------------------------------------------------------------
+//上記のオーバーライドの部分、重複部分をまとめる
+//super.スーパークラスのメソッド名();で呼び出し可能
+//他省略
 
+//Car.java
+class Car extends Vehicle {
+  private int fuel = 50;
+
+  public int getFuel() {
+    return this.fuel;
+  }
+
+  public void printData() {
+    // superを用いて、以下の重複部分を書き換え
+    super.printData();
+    System.out.println("ガソリン量：" + this.fuel + " L");
+  }
+
+  public void charge(int litre) {
+    System.out.println(litre + "L給油します");
+    if (litre <= 0) {
+      System.out.println("給油できません");
+    } else if (litre + this.fuel >= 100) {
+      System.out.println("満タンまで給油します");
+      this.fuel = 100;
+    } else {
+      this.fuel += litre;
+    }
+    System.out.println("ガソリン量：" + this.fuel + "L");
+  }
+}
 
