@@ -91,3 +91,18 @@ class Car extends Vehicle {
     System.out.println("ガソリン量：" + this.fuel + "L");
   }
 }
+
+//Bicycle.java
+class Bicycle extends Vehicle {
+  Bicycle(String name, String color) {
+    super(name, color);
+  }
+
+  public void run(int distance) {
+    System.out.println(distance + "km走ります");
+    this.distance += distance;
+    System.out.println("走行距離：" + this.distance + "km");
+  }
+}
+
+//Main.java
