@@ -332,9 +332,10 @@ class Car extends Vehicle {
 
 //Person.java
  // 上記2つを一つのメソッドで書き換え
+ // 他は省略
   public void buy(Vehicle vehicle){
     vehicle.setOwner(this);
   }
-}
+
 
   
